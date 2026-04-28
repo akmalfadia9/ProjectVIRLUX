@@ -1,3 +1,5 @@
 Temp
 Library
-Assets
+Assets/*
+!Assets/Aset Pribadi
+Logs
