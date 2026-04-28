@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\develop\\ProjectVIRLUX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1137B56D-53C9-DC56-FD33-70A4C913C866}|Assembly-CSharp.csproj|D:\\develop\\ProjectVIRLUX\\assets\\aset pribadi\\eksperimen 4\\script\\prismdispersioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1137B56D-53C9-DC56-FD33-70A4C913C866}|Assembly-CSharp.csproj|d:\\develop\\projectvirlux\\assets\\aset pribadi\\eksperimen 4\\script\\prismdispersioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1137B56D-53C9-DC56-FD33-70A4C913C866}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 4\\script\\prismdispersioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1137B56D-53C9-DC56-FD33-70A4C913C866}|Assembly-CSharp.csproj|d:\\develop\\projectvirlux\\assets\\aset pribadi\\eksperimen 4\\script\\whitelaseremitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1137B56D-53C9-DC56-FD33-70A4C913C866}|Assembly-CSharp.csproj|D:\\develop\\ProjectVIRLUX\\assets\\aset pribadi\\eksperimen 4\\script\\whitelaseremitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1137B56D-53C9-DC56-FD33-70A4C913C866}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 4\\script\\whitelaseremitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 4\\Script\\WhiteLaserEmitter.cs",
               "ToolTip": "D:\\develop\\ProjectVIRLUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Script\\WhiteLaserEmitter.cs",
               "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 4\\Script\\WhiteLaserEmitter.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAASwDIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMYAAAAAAAAAAAD4v9MAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-27T13:48:30.592Z",
               "IsPinned": true,
@@ -42,9 +42,9 @@
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 4\\Script\\PrismDispersionController.cs",
               "ToolTip": "D:\\develop\\ProjectVIRLUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Script\\PrismDispersionController.cs",
               "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 4\\Script\\PrismDispersionController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAAANMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T02:43:35.747Z",
+              "WhenOpened": "2026-04-28T06:21:08.945Z",
               "EditorCaption": ""
             }
           ]
