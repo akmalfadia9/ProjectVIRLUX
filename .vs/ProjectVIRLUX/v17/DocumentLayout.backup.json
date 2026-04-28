@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\develop\\ProjectVIRLUX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1137B56D-53C9-DC56-FD33-70A4C913C866}|Assembly-CSharp.csproj|D:\\develop\\ProjectVIRLUX\\assets\\aset pribadi\\eksperimen 4\\script\\whitelaseremitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1137B56D-53C9-DC56-FD33-70A4C913C866}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 4\\script\\whitelaseremitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1137B56D-53C9-DC56-FD33-70A4C913C866}|Assembly-CSharp.csproj|D:\\develop\\ProjectVIRLUX\\assets\\aset pribadi\\eksperimen 4\\script\\prismdispersioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1137B56D-53C9-DC56-FD33-70A4C913C866}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 4\\script\\prismdispersioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1137B56D-53C9-DC56-FD33-70A4C913C866}|Assembly-CSharp.csproj|d:\\develop\\projectvirlux\\assets\\inputtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1137B56D-53C9-DC56-FD33-70A4C913C866}|Assembly-CSharp.csproj|solutionrelative:assets\\inputtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1137B56D-53C9-DC56-FD33-70A4C913C866}|Assembly-CSharp.csproj|d:\\develop\\projectvirlux\\assets\\aset pribadi\\eksperimen 4\\script\\whitelaseremitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1137B56D-53C9-DC56-FD33-70A4C913C866}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 4\\script\\whitelaseremitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InputTest.cs",
-              "DocumentMoniker": "D:\\develop\\ProjectVIRLUX\\Assets\\InputTest.cs",
-              "RelativeDocumentMoniker": "Assets\\InputTest.cs",
-              "ToolTip": "D:\\develop\\ProjectVIRLUX\\Assets\\InputTest.cs",
-              "RelativeToolTip": "Assets\\InputTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T13:54:35.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "WhiteLaserEmitter.cs",
               "DocumentMoniker": "D:\\develop\\ProjectVIRLUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Script\\WhiteLaserEmitter.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 4\\Script\\WhiteLaserEmitter.cs",
               "ToolTip": "D:\\develop\\ProjectVIRLUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Script\\WhiteLaserEmitter.cs",
               "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 4\\Script\\WhiteLaserEmitter.cs",
-              "ViewState": "AgIAAJ4AAAAAAAAAAAAswKgAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAAASwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-27T13:48:30.592Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PrismDispersionController.cs",
+              "DocumentMoniker": "D:\\develop\\ProjectVIRLUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Script\\PrismDispersionController.cs",
+              "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 4\\Script\\PrismDispersionController.cs",
+              "ToolTip": "D:\\develop\\ProjectVIRLUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Script\\PrismDispersionController.cs",
+              "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 4\\Script\\PrismDispersionController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T02:43:35.747Z",
               "EditorCaption": ""
             }
           ]
