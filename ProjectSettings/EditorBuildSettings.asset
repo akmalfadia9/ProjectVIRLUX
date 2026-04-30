@@ -11,9 +11,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainRoomScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Laboratory Scene.unity
     guid: b208399998cb3fd4b855af9a5c3ead5e
+  - enabled: 1
+    path: Assets/Scenes/Eksperimen 1.unity
+    guid: 92b1173eae7ac294ea7587ebc8d9bea1
+  - enabled: 1
+    path: Assets/Scenes/Eksperimen 2.unity
+    guid: f502b18c1440f89498127897e4f837d4
+  - enabled: 1
+    path: Assets/Scenes/Eksperimen 3.unity
+    guid: e5f4bb377f9eebe4ca68ad3287b2d008
+  - enabled: 1
+    path: Assets/Scenes/Eksperimen 4.unity
+    guid: 4932d2749a2c5d447b208084db6fb49a
+  - enabled: 1
+    path: Assets/Scenes/Eksperimen 5.unity
+    guid: 7c544a948fb915b468318b291ac563b8
+  - enabled: 1
+    path: Assets/Scenes/Eksperimen 6.unity
+    guid: 51b37b585337f604bb00745127d43e84
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ae2c5e96e42a32b4584d99791baaa9ab, type: 2}
