@@ -1,6 +1,7 @@
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.ProBuilder;
 
 /// <summary>
 /// Komponen utama yang di-attach pada setiap GameObject Prisma.
@@ -29,12 +30,47 @@ public class PrismDispersionController : MonoBehaviour
     [Tooltip("Layer mask. Set ke layer 'Prism' saja agar tidak interference objek lain.")]
     public LayerMask prismLayerMask = ~0;
 
-    [Header("=== GEOMETRI PERMUKAAN ===")]
-    [Tooltip("Transform yang mewakili permukaan masuk sinar (Surface 1). Arah forward = normal permukaan.")]
-    public Transform surface1;
+    [Header("Laser Settings")]
+    [Tooltip("Transform tempat sinar laser keluar (ujung laser)")]
+    public Transform laserOrigin;
 
-    [Tooltip("Transform yang mewakili permukaan keluar sinar (Surface 2). Arah forward = normal permukaan.")]
-    public Transform surface2;
+    [Tooltip("Layer mask untuk cermin")]
+    public LayerMask mirrorLayer;
+
+    [Tooltip("Layer mask untuk semua objek yang bisa dipantulkan")]
+    public LayerMask reflectableLayer;
+
+    [Header("Normal Line Settings")]
+    [Tooltip("Warna garis normal")]
+    public Color normalColor = Color.white;
+
+    public Material normalMaterial;
+
+    public LineRenderer entryNormalRenderer;
+    public LineRenderer exitNormalRenderer;
+
+    [Tooltip("Panjang garis normal ke atas dari titik pantul")]
+    public float normalLineLength = 3f;
+
+    private LineRenderer _entryNormalLR;
+    private LineRenderer _exitNormalLR;
+
+    [Tooltip("Lebar garis normal")]
+    public float normalLineWidth = 0.003f;
+
+    [Header("=== ARC SETTINGS ===")]
+    public float arcRadius = 1f;
+    public int arcSegments = 30;
+    private LineRenderer _arcRed;
+    private LineRenderer _arcYellow;
+    private LineRenderer _arcPurple;
+
+
+    private float _angleRed, _angleYellow, _anglePurple;
+
+
+    [Tooltip("Lebar busur")]
+    public float arcWidth = 0.05f;
 
     [Header("=== LINE RENDERER SPEKTRUM ===")]
     [Tooltip("LineRenderer untuk sinar datang (putih). Sudah ada di scene.")]
@@ -45,14 +81,14 @@ public class PrismDispersionController : MonoBehaviour
 
     [Tooltip("Panjang sinar spektrum yang keluar (meter)")]
     [Range(0.1f, 10f)]
-    public float exitRayLength = 3f;
+    public float exitRayLength = 5f;
 
     [Header("=== LABEL DATA FISIKA ===")]
     [Tooltip("Prefab TextMeshPro World Space untuk menampilkan data kalkulasi real-time")]
     public GameObject physicsLabelPrefab;
 
     [Tooltip("Offset posisi label dari titik tumbukan")]
-    public Vector3 labelOffset = new Vector3(0.1f, 0.3f, 0);
+    public Vector3 labelOffset = new Vector3(0.1f, 0.2f, 0);
 
 
     [Header("=== DEBUG ===")]
@@ -111,94 +147,22 @@ public class PrismDispersionController : MonoBehaviour
     // PUBLIC API — dipanggil oleh LaserEmitter
     // =====================================================================
 
-    /// <summary>
-    /// Dipanggil oleh LaserEmitter setiap frame ketika sinar mengenai prisma ini.
-    /// Menjalankan kalkulasi fisika dan memperbarui visualisasi.
-    /// </summary>
-    /// <param name="hitPoint">Titik tumbukan dalam world space</param>
-    /// <param name="incomingDirection">Arah sinar datang (normalized)</param>
-    /// <param name="hitNormal">Normal permukaan di titik tumbukan (world space)</param>
+
     public void OnRayHit(Vector3 hitPoint, Vector3 incomingDirection, Vector3 hitNormal)
     {
         _isActive = true;
-        _lastHitPoint = hitPoint;
-        _lastIncomingDir = incomingDirection;
+        Vector3 exitPoint = new();
+        Vector3 exitNormal;
 
+        // --- AUTO-INITIALIZE ---
+        if (_entryNormalLR == null) _entryNormalLR = CreateNormalLine("EntryNormal_Auto", Color.white);
+        if (_exitNormalLR == null) _exitNormalLR = CreateNormalLine("ExitNormal_Auto", Color.white);
 
-        // 2. Calculate Internal Angle (theta2) using Yellow as the "average" index
-        float n1 = 1.0f; // Air
-        float n2 = prismMaterial.GetRefractiveIndex(SpectrumColor.Yellow);
-        float eta = n1 / n2;
-
-        // Calculate the incidence angle
-        //float theta1 = Vector3.Angle(-hitNormal, incomingDirection);
-        // Calculate refraction angle (theta2)
-        //float theta2 = DispersionPhysics.SnellRefraction(theta1, n1, n2);
-
-        //if (float.IsNaN(theta2)) return; // Total Internal Reflection at entry (rare)
-
-        // 3. Create the Internal Direction Vector
-        // We rotate the -hitNormal by theta2 relative to the incoming direction
-        //Vector3 rotationAxis = Vector3.Cross(-hitNormal, incomingDirection).normalized;
-        //Vector3 internalDir = Quaternion.AngleAxis(theta2, rotationAxis) * -hitNormal;
-        Vector3 internalDir = Refract(incomingDirection.normalized, hitNormal.normalized, eta);
-
-        if (internalDir == Vector3.zero) return;
-
-        // 2. Find the Exit Point using a raycast from INSIDE
-        // Start slightly inside to avoid hitting the entry wall again
-        Vector3 internalOrigin = hitPoint + (internalDir * 0.001f);
-
-        // Enable "Queries Hit Backfaces" so we can hit the inside of the mesh
-        bool oldBackfaceSetting = Physics.queriesHitBackfaces;
-        Physics.queriesHitBackfaces = true;
-
-        if (Physics.Raycast(internalOrigin, internalDir, out RaycastHit exitHit, 2f, prismLayerMask))
-        {
-            Vector3 exitPoint = exitHit.point;
-            Vector3 exitNormal = exitHit.normal; // This is the normal of the back wall
-
-            Debug.DrawLine(hitPoint, exitPoint, Color.yellow);
-
-            // 3. Calculate dispersion for all colors based on this specific exitNormal
-            for (int i = 0; i < 6; i++)
-            {
-                //SpectrumColor col = (SpectrumColor)i;
-                //_lastResults[i] = DispersionPhysics.CalculateDispersion(
-                //    color: col,
-                //    material: prismMaterial,
-                //    incidenceAngleDeg: theta1,
-                //    apexAngleDeg: apexAngleDeg, // Note: You might need to adjust this math if apex isn't constant
-                //    surfaceNormal1: hitNormal,
-                //    surfaceNormal2: -exitNormal, // Flip because RaycastHit normal points OUT
-                //    incomingDirection: incomingDirection
-                //);
-
-                float nExit1 = prismMaterial.GetRefractiveIndex((SpectrumColor)i);
-                float nExit2 = 1.0f;
-                float etaExit = nExit1 / nExit2;
-
-                // Note: Use -exitNormal because the ray hits the "back" of the face
-                Vector3 finalExitDir = Refract(internalDir, -exitNormal, etaExit);
-
-                // Update individual line renderer positions
-                if (spectrumRenderers[i] != null && !_lastResults[i].totalInternalReflection)
-                {
-                    spectrumRenderers[i].enabled = true;
-                    spectrumRenderers[i].SetPosition(0, exitPoint);
-                    //spectrumRenderers[i].SetPosition(1, exitPoint + _lastResults[i].exitDirection * exitRayLength);
-                    spectrumRenderers[i].SetPosition(1, exitPoint + finalExitDir * exitRayLength);
-                }
-            }
-        }
-
-        Physics.queriesHitBackfaces = oldBackfaceSetting; // Restore setting
-    }
-
-
-    public void OnRayHit2(Vector3 hitPoint, Vector3 incomingDirection, Vector3 hitNormal)
-    {
-        _isActive = true;
+        // --- DRAW ENTRY NORMAL ---
+        _entryNormalLR.enabled = true;
+        _entryNormalLR.SetPosition(0, hitPoint);
+        //_entryNormalLR.SetPosition(1, hitPoint - (hitNormal * normalLineLength));
+        _entryNormalLR.SetPosition(1, hitPoint + (incomingDirection * normalLineLength));
 
         bool oldBackface = Physics.queriesHitBackfaces;
         Physics.queriesHitBackfaces = true;
@@ -215,16 +179,24 @@ public class PrismDispersionController : MonoBehaviour
 
             if (internalDir == Vector3.zero) { spectrumRenderers[i].enabled = false; continue; }
 
+
             // --- STEP 2: INTERNAL PATH (Finding unique exit point) ---
             Vector3 internalOrigin = hitPoint + (internalDir * 0.001f);
             if (Physics.Raycast(internalOrigin, internalDir, out RaycastHit exitHit, 2f, prismLayerMask))
             {
-                Vector3 exitPoint = exitHit.point;
-                Vector3 exitNormal = exitHit.normal;
+                exitPoint = exitHit.point;
+                exitNormal = exitHit.normal;
 
                 // --- STEP 3: EXIT REFRACTION (Glass to Air) ---
                 // Use -exitNormal because the ray hits the back face from inside
                 Vector3 finalExitDir = Refract(internalDir, -exitNormal, n2 / 1.0f);
+
+                // Final angle from normal line
+                float currentAngle = Vector3.Angle(exitHit.normal, finalExitDir);
+
+                if (i == 0) _angleRed = currentAngle;
+                if (i == 2) _angleYellow = currentAngle;
+                if (i == 5) _anglePurple = currentAngle;
 
                 // --- STEP 4: VISUALS (3 Points) ---
                 spectrumRenderers[i].enabled = true;
@@ -234,14 +206,14 @@ public class PrismDispersionController : MonoBehaviour
                 AnimationCurve curve = new AnimationCurve();
 
                 // Key 0: Start of the line (Entry Point) -> Width 0.005
-                curve.AddKey(0.0f, 0.002f);
+                curve.AddKey(0.0f, 0.005f);
 
                 // Key 1: Middle of the line (Exit Point) -> Width 0.01
                 // (0.5 is the middle of the position array, not physical distance)
-                curve.AddKey(0.5f, 0.005f);
+                curve.AddKey(0.5f, 0.01f);
 
                 // Key 2: End of the line (Outer Space) -> Width 0.05
-                curve.AddKey(1.0f, 0.03f);
+                curve.AddKey(1.0f, 0.05f);
 
                 // Apply the curve to the LineRenderer
                 spectrumRenderers[i].widthCurve = curve;
@@ -257,6 +229,23 @@ public class PrismDispersionController : MonoBehaviour
                 // Gradient: White at entry -> Color at exit
                 spectrumRenderers[i].startColor = Color.white;
                 spectrumRenderers[i].endColor = SpectrumColors[i];
+
+                // --- DRAW SPECIFIC ARCS ---
+                if (i == 0) // RED
+                {
+                    if (_arcRed == null) _arcRed = CreateNormalLine("Arc_Red", Color.red);
+                    DrawArc(_arcRed, exitHit.point, exitHit.normal, finalExitDir, arcRadius * 0.8f);
+                }
+                else if (i == 2) // YELLOW
+                {
+                    if (_arcYellow == null) _arcYellow = CreateNormalLine("Arc_Yellow", Color.yellow);
+                    DrawArc(_arcYellow, exitHit.point, exitHit.normal, finalExitDir, arcRadius);
+                }
+                else if (i == 5) // PURPLE
+                {
+                    if (_arcPurple == null) _arcPurple = CreateNormalLine("Arc_Purple", new Color(0.7f, 0, 1f));
+                    DrawArc(_arcPurple, exitHit.point, exitHit.normal, finalExitDir, arcRadius * 1.2f);
+                }
             }
             else
             {
@@ -264,9 +253,19 @@ public class PrismDispersionController : MonoBehaviour
             }
         }
 
+        if (_isActive)
+        {
+            string multiAngleText =
+                $"<color=#FF1A1A>Red: {_angleRed:F2}°</color>\n" +
+                $"<color=#FFE600>Yellow: {_angleYellow:F2}°</color>\n" +
+                $"<color=#B300FF>Violet: {_anglePurple:F2}°</color>";
+
+            // Use the last hitPoint and an offset for the label
+            UpdateMultiPhysicsLabel(exitPoint, multiAngleText);
+        }
+
         Physics.queriesHitBackfaces = oldBackface;
     }
-
 
     Vector3 Refract(Vector3 incoming, Vector3 normal, float eta)
     {
@@ -278,71 +277,60 @@ public class PrismDispersionController : MonoBehaviour
         else
             return eta * incoming - (eta * dot + Mathf.Sqrt(k)) * normal;
     }
-
-    // =====================================================================
-    // VISUALISASI SPEKTRUM
-    // =====================================================================
-
-    /// <summary>
-    /// Memperbarui posisi dan warna seluruh LineRenderer spektrum.
-    /// Titik awal = titik keluar (surface2 hit), titik akhir = arah bias × length.
-    ///
-    /// Untuk menyederhanakan, kita gunakan hitPoint di surface2 sebagai
-    /// titik origin semua sinar keluar, lalu pisahkan dengan offset kecil
-    /// agar tidak overlap secara visual.
-    /// </summary>
-    private void UpdateSpectrumVisualForIndex(int i, Vector3 exitPoint, Vector3 exitDirection)
+    private LineRenderer CreateNormalLine(string name, Color color)
     {
-            if (exitDirection == Vector3.zero)
-            {
-                spectrumRenderers[i].enabled = false;
-            }
+        GameObject go = new GameObject(name);
+        go.transform.SetParent(this.transform); // Keeps hierarchy clean
+        go.layer = 2;
 
-            spectrumRenderers[i].enabled = true;
-
-            // Posisi: dari exitPoint ke arah exitDirection × panjang
-            Vector3 endPoint = exitPoint + exitDirection * exitRayLength;
-
-            spectrumRenderers[i].SetPosition(0, exitPoint);
-            spectrumRenderers[i].SetPosition(1, endPoint);
-
-            // Warna gradien dari putih (masuk) ke warna spektrum (keluar)
-            spectrumRenderers[i].startColor = Color.white;
-            spectrumRenderers[i].endColor = SpectrumColors[i];
-    }
-
-    /// <summary>
-    /// Estimasi titik keluar sinar dari prisma.
-    /// Melakukan Raycast dari titik masuk ke arah dalam prisma,
-    /// dan mencari titik tumbukan kedua dengan permukaan prisma.
-    /// </summary>
-    private Vector3 EstimateExitPoint(Vector3 entryPoint)
-    {
-        if (_lastResults.Length == 0) return entryPoint + transform.forward * 0.1f;
-
-        // Gunakan hasil warna kuning (tengah spektrum) sebagai representasi
-        var refResult = _lastResults[(int)SpectrumColor.Yellow];
-
-        // Hitung arah dalam prisma setelah refraksi permukaan 1
-        Vector3 normal1 = (surface1 != null) ? surface1.forward : transform.forward;
-        Vector3 insideDir = DispersionPhysics.CalculateExitDirection(
-            _lastIncomingDir, -normal1, refResult.theta2);
-
-        // Raycast dari titik masuk ke arah dalam prisma untuk menemukan permukaan 2
-        Ray insideRay = new Ray(entryPoint + insideDir * 0.001f, insideDir);
-        if (Physics.Raycast(insideRay, out RaycastHit hit2, 2f))
+        LineRenderer lr = go.AddComponent<LineRenderer>();
+        if (normalMaterial != null)
         {
-            // Pastikan hanya mendeteksi prisma ini sendiri
-            if (hit2.collider.gameObject == gameObject ||
-                hit2.collider.transform.IsChildOf(transform))
-            {
-                return hit2.point;
-            }
+            lr.material = normalMaterial;
+        }
+        else
+        {
+            lr.material = new Material(Shader.Find("Sprites/Default"));
         }
 
-        // Fallback: gunakan posisi surface2 jika raycast gagal
-        return surface2 != null ? surface2.position : entryPoint + transform.forward * 0.15f;
+        lr.startColor = lr.endColor = color;
+        lr.startWidth = lr.endWidth = normalLineWidth;
+
+        lr.positionCount = 2;
+        lr.useWorldSpace = true;
+        lr.enabled = false; // Hidden by default
+        return lr;
     }
+
+    private void DrawArc(LineRenderer lr, Vector3 center, Vector3 normalDir, Vector3 exitDir, float radius)
+    {
+        lr.enabled = true;
+        lr.positionCount = arcSegments + 1;
+
+        for (int i = 0; i <= arcSegments; i++)
+        {
+            float progress = (float)i / arcSegments;
+            // Slerp creates the curved path between the Normal and the Ray
+            Vector3 pointDir = Vector3.Slerp(normalDir.normalized, exitDir.normalized, progress);
+            lr.SetPosition(i, center + (pointDir * radius));
+        }
+    }
+
+
+    private void HideNormals()
+    {
+        if (_entryNormalLR != null) _entryNormalLR.enabled = false;
+        if (_exitNormalLR != null) _exitNormalLR.enabled = false;
+    }
+
+    private void HideArcs()
+    {
+        if (_arcRed != null) _arcRed.enabled = false;
+        if (_arcYellow != null) _arcYellow.enabled = false;
+        if (_arcPurple != null) _arcPurple.enabled = false;
+    }
+
+
 
     // =====================================================================
     // LABEL FISIKA (TextMeshPro World Space)
@@ -358,51 +346,36 @@ public class PrismDispersionController : MonoBehaviour
         _labelInstance = Instantiate(physicsLabelPrefab, transform);
         _labelTMP = _labelInstance.GetComponentInChildren<TextMeshPro>();
         _labelInstance.SetActive(false);
+
     }
 
     /// <summary>
     /// Memperbarui konten label dengan data kalkulasi terbaru.
     /// Menampilkan sudut-sudut kunci dan variasi per-warna.
     /// </summary>
-    private void UpdatePhysicsLabel(
-        Vector3 hitPoint,
-        DispersionPhysics.DispersionResult[] results)
+    private void UpdateMultiPhysicsLabel(Vector3 point, string text)
     {
-        if (_labelInstance == null || _labelTMP == null) return;
 
-        _labelInstance.SetActive(true);
+        if (_labelInstance != null)
+        {
+            _labelInstance.SetActive(true);
+            _labelTMP.text = text;
+            _labelTMP.alignment = TextAlignmentOptions.Center;
+            _labelTMP.fontSize = 4;
 
-        // Posisikan label di dekat titik tumbukan
-        _labelInstance.transform.position = hitPoint + labelOffset;
+            // Position it slightly above the exit point
+            _labelInstance.transform.position = point + labelOffset;
 
-        // Arahkan label agar selalu menghadap kamera (billboard)
-        if (Camera.main != null)
-            _labelInstance.transform.LookAt(Camera.main.transform);
-
-        // Ambil hasil referensi (kuning = tengah spektrum)
-        var yellow = results[(int)SpectrumColor.Yellow];
-        var red    = results[(int)SpectrumColor.Red];
-        var violet = results[(int)SpectrumColor.Violet];
-
-        // -------------------------------------------------------
-        // FORMAT TEKS LABEL
-        // -------------------------------------------------------
-        string labelText =
-            $"<b><color=#FFD700>[ {prismMaterial.materialName} ]</color></b>\n" +
-            $"<size=80%><color=#AAAAAA>──────────────────</color></size>\n" +
-            $"<b>θ₁</b> Sudut Datang Pertama : <color=#00FFFF>{yellow.theta1:F1}°</color>\n" +
-            $"<b>θ₂</b> Sudut Bias Pertama   : <color=#00FFFF>{yellow.theta2:F1}°</color>\n" +
-            $"<b>A</b>  Sudut Pembias (Apex) : <color=#FFAA00>{apexAngleDeg:F1}°</color>\n" +
-            $"<b>θ₃</b> Sudut Datang Akhir   : <color=#00FFFF>{yellow.theta3:F1}°</color>\n" +
-            $"<size=80%><color=#AAAAAA>──── Dispersi ────</color></size>\n" +
-            $"<color=#FF4444>Merah</color>  θ₄ = {(float.IsNaN(red.theta4) ? "TIR" : $"{red.theta4:F1}°")}" +
-            $"   D = {(float.IsNaN(red.deviationAngle) ? "TIR" : $"{red.deviationAngle:F1}°")}\n" +
-            $"<color=#CC44FF>Ungu</color>   θ₄ = {(float.IsNaN(violet.theta4) ? "TIR" : $"{violet.theta4:F1}°")}" +
-            $"   D = {(float.IsNaN(violet.deviationAngle) ? "TIR" : $"{violet.deviationAngle:F1}°")}\n" +
-            $"<size=75%><color=#888888>Δθ₄ = {(float.IsNaN(violet.theta4) || float.IsNaN(red.theta4) ? "N/A" : $"{Mathf.Abs(violet.theta4 - red.theta4):F2}°")} (ungu − merah)</color></size>";
-
-        _labelTMP.text = labelText;
+            // Face the user/camera
+            if (Camera.main != null)
+            {
+                _labelInstance.transform.LookAt(_labelInstance.transform.position + Camera.main.transform.rotation * Vector3.forward,
+                                             Camera.main.transform.rotation * Vector3.up);
+                _labelInstance.transform.Rotate(0, 180, 0);
+            }
+        }
     }
+
 
     // =====================================================================
     // HELPER
@@ -412,6 +385,8 @@ public class PrismDispersionController : MonoBehaviour
     {
         foreach (var lr in spectrumRenderers)
             if (lr != null) lr.enabled = false;
+        HideNormals();
+        HideArcs();
     }
 
     private void ValidateSetup()
@@ -419,46 +394,8 @@ public class PrismDispersionController : MonoBehaviour
         if (prismMaterial == null)
             Debug.LogError($"[PrismDispersion] {name}: PrismMaterial belum di-assign!");
 
-        if (surface1 == null || surface2 == null)
-            Debug.LogWarning($"[PrismDispersion] {name}: Surface1/Surface2 belum di-assign. " +
-                             "Perhitungan arah mungkin tidak akurat.");
-
         if (spectrumRenderers.Length != 6)
             Debug.LogWarning($"[PrismDispersion] {name}: Dibutuhkan tepat 6 LineRenderer spektrum.");
     }
 
-    // =====================================================================
-    // GIZMOS (Editor Visualization)
-    // =====================================================================
-
-    private void OnDrawGizmos()
-    {
-        if (!showDebugGizmos) return;
-
-        // Tampilkan normal permukaan
-        if (surface1 != null)
-        {
-            Gizmos.color = Color.blue;
-            Gizmos.DrawRay(surface1.position, surface1.forward * 0.3f);
-            Gizmos.DrawWireSphere(surface1.position, 0.03f);
-        }
-        if (surface2 != null)
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawRay(surface2.position, surface2.forward * 0.3f);
-            Gizmos.DrawWireSphere(surface2.position, 0.03f);
-        }
-
-        // Tampilkan arah sinar keluar jika ada kalkulasi
-        if (Application.isPlaying && _isActive)
-        {
-            Vector3 exitPt = EstimateExitPoint(_lastHitPoint);
-            for (int i = 0; i < 6; i++)
-            {
-                if (_lastResults[i].totalInternalReflection) continue;
-                Gizmos.color = SpectrumColors[i];
-                Gizmos.DrawRay(exitPt, _lastResults[i].exitDirection * 0.5f);
-            }
-        }
-    }
 }
