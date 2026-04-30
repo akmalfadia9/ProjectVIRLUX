@@ -47,13 +47,18 @@ public class PrismDispersionController : MonoBehaviour
     public Material normalMaterial;
 
     public LineRenderer entryNormalRenderer;
-    public LineRenderer exitNormalRenderer;
 
     [Tooltip("Panjang garis normal ke atas dari titik pantul")]
     public float normalLineLength = 3f;
 
     private LineRenderer _entryNormalLR;
-    private LineRenderer _exitNormalLR;
+
+    // Angle of incident
+    private LineRenderer _arcEntry;
+    private LineRenderer _incidentLine;
+    private float _angleIncidence;
+    private Color entryArcColor = new Color(1f, 1f, 1f, 0.5f); // Semi-transparent white
+
 
     [Tooltip("Lebar garis normal")]
     public float normalLineWidth = 0.003f;
@@ -70,7 +75,7 @@ public class PrismDispersionController : MonoBehaviour
 
 
     [Tooltip("Lebar busur")]
-    public float arcWidth = 0.05f;
+    public float arcWidth = 1f;
 
     [Header("=== LINE RENDERER SPEKTRUM ===")]
     [Tooltip("LineRenderer untuk sinar datang (putih). Sudah ada di scene.")]
@@ -156,13 +161,30 @@ public class PrismDispersionController : MonoBehaviour
 
         // --- AUTO-INITIALIZE ---
         if (_entryNormalLR == null) _entryNormalLR = CreateNormalLine("EntryNormal_Auto", Color.white);
-        if (_exitNormalLR == null) _exitNormalLR = CreateNormalLine("ExitNormal_Auto", Color.white);
 
         // --- DRAW ENTRY NORMAL ---
         _entryNormalLR.enabled = true;
         _entryNormalLR.SetPosition(0, hitPoint);
         //_entryNormalLR.SetPosition(1, hitPoint - (hitNormal * normalLineLength));
         _entryNormalLR.SetPosition(1, hitPoint + (incomingDirection * normalLineLength));
+
+        // ---1.INCIDENCE ANGLE & ARC-- -
+        // We use -incomingDirection because we want the angle from the "start" of the laser
+        // and hitNormal which points OUT of the prism.
+        _angleIncidence = Vector3.Angle(hitNormal, -incomingDirection.normalized);
+
+        if (_arcEntry == null) _arcEntry = CreateNormalLine("Arc_Entry", entryArcColor);
+
+        // Draw arc between Normal and the direction the laser is coming FROM
+        DrawArc(_arcEntry, hitPoint, hitNormal, -incomingDirection.normalized, arcRadius);
+
+        // Incidence Line
+        if (_incidentLine == null) _incidentLine = CreateNormalLine("IncidentNormal_Auto", Color.white);
+        _incidentLine.enabled = true;
+        _incidentLine.SetPosition(0, hitPoint + (hitNormal * normalLineLength));
+        _incidentLine.SetPosition(1, hitPoint - (hitNormal * normalLineLength));
+
+
 
         bool oldBackface = Physics.queriesHitBackfaces;
         Physics.queriesHitBackfaces = true;
@@ -256,6 +278,8 @@ public class PrismDispersionController : MonoBehaviour
         if (_isActive)
         {
             string multiAngleText =
+                $"<color=white>Incidence: {_angleIncidence:F1}°</color>\n" +
+                "------------------\n" +
                 $"<color=#FF1A1A>Red: {_angleRed:F2}°</color>\n" +
                 $"<color=#FFE600>Yellow: {_angleYellow:F2}°</color>\n" +
                 $"<color=#B300FF>Violet: {_anglePurple:F2}°</color>";
@@ -306,6 +330,7 @@ public class PrismDispersionController : MonoBehaviour
     {
         lr.enabled = true;
         lr.positionCount = arcSegments + 1;
+        lr.startWidth = lr.endWidth = arcWidth;
 
         for (int i = 0; i <= arcSegments; i++)
         {
@@ -320,7 +345,7 @@ public class PrismDispersionController : MonoBehaviour
     private void HideNormals()
     {
         if (_entryNormalLR != null) _entryNormalLR.enabled = false;
-        if (_exitNormalLR != null) _exitNormalLR.enabled = false;
+        if (_incidentLine != null) _incidentLine.enabled = false;
     }
 
     private void HideArcs()
