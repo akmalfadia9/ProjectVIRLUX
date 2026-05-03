@@ -4,113 +4,82 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 /// <summary>
-/// KarakteristikGrafikController
-/// Menampilkan grafik intensitas vs waktu secara real-time menggunakan LineRenderer.
-/// Graf cahaya: tetap konstan saat lampu ON, turun tiba-tiba saat lampu OFF.
-/// Graf bunyi: turun bertahap saat vacuum aktif.
-/// Panel grafik TERSEMBUNYI di awal, muncul saat player tekan tombol show graph.
-/// Data grafik sinkron dengan panel data angka.
+/// KarakteristikGrafikController - Fixed Version
+/// Grafik intensitas vs waktu menggunakan LineRenderer.
+/// Posisi grafik otomatis mengikuti posisi Canvas (tidak perlu setting manual).
 /// </summary>
 public class KarakteristikGrafikController : MonoBehaviour
 {
-    // ─── Graph Panel ──────────────────────────────────────────────────────────
     [Header("=== Panel Grafik Karakteristik ===")]
-    [Tooltip("Root panel grafik (awalnya hidden)")]
     public GameObject grafikPanelRoot;
-
-    [Tooltip("Tombol XR untuk show/hide grafik")]
     public XRSimpleInteractable showGrafikButton;
+    public TMPro.TextMeshProUGUI showGrafikButtonLabel;
 
-    [Tooltip("Label tombol show grafik")]
-    public TMPro.TextMeshPro showGrafikButtonLabel;
-
-    // ─── LineRenderers ────────────────────────────────────────────────────────
     [Header("=== LineRenderer Grafik ===")]
-    [Tooltip("LineRenderer untuk garis grafik cahaya (kuning)")]
     public LineRenderer lineGrafikCahaya;
-
-    [Tooltip("LineRenderer untuk garis grafik bunyi (merah)")]
     public LineRenderer lineGrafikBunyi;
-
-    [Tooltip("LineRenderer untuk garis axis X (horizontal)")]
     public LineRenderer lineAxisX;
-
-    [Tooltip("LineRenderer untuk garis axis Y (vertikal)")]
     public LineRenderer lineAxisY;
 
-    // ─── Label Grafik ─────────────────────────────────────────────────────────
     [Header("=== Label Grafik ===")]
-    public TMPro.TextMeshPro labelJudulGrafik;
-    public TMPro.TextMeshPro labelAxisX;          // "Waktu (s)"
-    public TMPro.TextMeshPro labelAxisY;          // "Intensitas"
-    public TMPro.TextMeshPro labelGarisKuning;    // "Cahaya (lux)"
-    public TMPro.TextMeshPro labelGarisMerah;     // "Bunyi (dB)"
-    public TMPro.TextMeshPro labelNilaiCahayaLive;
-    public TMPro.TextMeshPro labelNilaiBunyiLive;
+    public TMPro.TextMeshProUGUI labelJudulGrafik;
+    public TMPro.TextMeshProUGUI labelAxisX;
+    public TMPro.TextMeshProUGUI labelAxisY;
+    public TMPro.TextMeshProUGUI labelGarisKuning;
+    public TMPro.TextMeshProUGUI labelGarisMerah;
+    public TMPro.TextMeshProUGUI labelNilaiCahayaLive;
+    public TMPro.TextMeshProUGUI labelNilaiBunyiLive;
 
-    // ─── Konfigurasi Grafik ───────────────────────────────────────────────────
     [Header("=== Konfigurasi Grafik ===")]
     [Tooltip("Lebar area grafik dalam world units")]
-    public float grafikWidth    = 0.8f;
+    public float grafikWidth = 0.5f;
 
     [Tooltip("Tinggi area grafik dalam world units")]
-    public float grafikHeight   = 0.4f;
+    public float grafikHeight = 0.25f;
 
-    [Tooltip("Maksimum titik data yang disimpan")]
-    public int   maxDataPoints  = 200;
+    [Tooltip("Offset dari pusat Canvas ke pojok kiri bawah grafik")]
+    public Vector3 grafikOffset = new Vector3(-0.22f, -0.1f, -0.01f);
 
-    [Tooltip("Interval sampling data (detik)")]
+    public int maxDataPoints = 150;
     public float sampleInterval = 0.2f;
+    public float maxIntensitasCahaya = 850f;
+    public float maxIntensitasBunyi = 80f;
 
-    [Tooltip("Nilai maksimum Y axis (untuk normalisasi)")]
-    public float maxIntensitasCahaya = 850f;    // lux - sedikit di atas base value
+    [Header("=== Warna ===")]
+    public Color warnaCahaya = new Color(1f, 0.85f, 0.1f);
+    public Color warnaBunyi = new Color(1f, 0.3f, 0.3f);
+    public Color warnaAxis = new Color(0.7f, 0.7f, 0.7f);
 
-    [Tooltip("Nilai maksimum Y axis bunyi")]
-    public float maxIntensitasBunyi  = 80f;     // dB
+    [Header("=== Debug ===")]
+    [Tooltip("Aktifkan untuk lihat titik origin grafik di Scene view")]
+    public bool showDebugGizmo = true;
 
-    [Header("=== Warna Garis ===")]
-    public Color warnaCahaya  = new Color(1f, 0.85f, 0.1f);   // kuning
-    public Color warnaBunyi   = new Color(1f, 0.3f, 0.3f);    // merah
-    public Color warnaAxis    = new Color(0.7f, 0.7f, 0.7f);  // abu-abu
-
-    // ─── Data History ─────────────────────────────────────────────────────────
+    // ─── Data ─────────────────────────────────────────────────────────────────
     private Queue<float> dataCahaya = new Queue<float>();
-    private Queue<float> dataBunyi  = new Queue<float>();
+    private Queue<float> dataBunyi = new Queue<float>();
+    private float sampleTimer = 0f;
+    private bool isPanelVisible = false;
 
-    private float sampleTimer    = 0f;
-    private bool  isPanelVisible = false;
-    private float elapsedTime    = 0f;
-
-    // ─── Cached values ────────────────────────────────────────────────────────
-    private Vector3 grafikOrigin;  // Titik kiri-bawah area grafik (local space)
+    // Origin grafik di world space (dihitung otomatis dari Canvas)
+    private Vector3 worldOrigin;
+    private Vector3 worldRight;
+    private Vector3 worldUp;
 
     // ─────────────────────────────────────────────────────────────────────────
     private void Start()
     {
-        grafikOrigin = Vector3.zero;
-
-        // Setup grafik panel - hidden di awal
         if (grafikPanelRoot != null)
             grafikPanelRoot.SetActive(false);
 
-        // Setup button label
         if (showGrafikButtonLabel != null)
             showGrafikButtonLabel.text = "TAMPILKAN\nGRAFIK\nEKSPERIMEN";
 
-        // Setup labels
         SetupLabels();
-
-        // Setup LineRenderer defaults
         SetupLineRenderers();
 
-        // Setup axis lines
-        DrawAxis();
-
-        // XR Button
         if (showGrafikButton != null)
             showGrafikButton.selectEntered.AddListener(OnShowGrafikPressed);
 
-        // Seed dengan nol agar grafik tidak kosong
         for (int i = 0; i < 10; i++)
         {
             dataCahaya.Enqueue(0f);
@@ -126,9 +95,7 @@ public class KarakteristikGrafikController : MonoBehaviour
 
     private void Update()
     {
-        elapsedTime += Time.deltaTime;
         sampleTimer += Time.deltaTime;
-
         if (sampleTimer >= sampleInterval)
         {
             sampleTimer = 0f;
@@ -137,129 +104,140 @@ public class KarakteristikGrafikController : MonoBehaviour
 
         if (isPanelVisible && grafikPanelRoot != null && grafikPanelRoot.activeSelf)
         {
+            UpdateGrafikOrigin();
+            DrawAxis();
             DrawGrafik();
             UpdateLiveLabels();
         }
     }
 
-    // ─── Data Sampling ────────────────────────────────────────────────────────
+    // ─── Hitung origin grafik dari posisi Canvas secara otomatis ──────────────
+    private void UpdateGrafikOrigin()
+    {
+        if (grafikPanelRoot == null) return;
+
+        Transform canvasTF = grafikPanelRoot.transform;
+
+        worldRight = canvasTF.right;
+        worldUp = canvasTF.up;
+
+        worldOrigin = canvasTF.position
+                    + canvasTF.right * grafikOffset.x
+                    + canvasTF.up * grafikOffset.y
+                    + canvasTF.forward * grafikOffset.z;
+    }
+
+    // ─── Sampling Data ────────────────────────────────────────────────────────
     private void SampleData()
     {
         var mgr = KarakteristikExperimentManager.Instance;
         if (mgr == null) return;
 
-        float cahaya = mgr.LightIntensity;
-        float bunyi  = mgr.SoundIntensity;
+        dataCahaya.Enqueue(mgr.LightIntensity);
+        dataBunyi.Enqueue(mgr.SoundIntensity);
 
-        dataCahaya.Enqueue(cahaya);
-        dataBunyi.Enqueue(bunyi);
-
-        // Hapus data lama
         while (dataCahaya.Count > maxDataPoints) dataCahaya.Dequeue();
-        while (dataBunyi.Count  > maxDataPoints) dataBunyi.Dequeue();
+        while (dataBunyi.Count > maxDataPoints) dataBunyi.Dequeue();
     }
 
     // ─── Draw Grafik ──────────────────────────────────────────────────────────
     private void DrawGrafik()
     {
         float[] arrCahaya = new List<float>(dataCahaya).ToArray();
-        float[] arrBunyi  = new List<float>(dataBunyi).ToArray();
-
+        float[] arrBunyi = new List<float>(dataBunyi).ToArray();
         int n = Mathf.Min(arrCahaya.Length, arrBunyi.Length);
         if (n == 0) return;
 
-        Vector3[] pointsCahaya = new Vector3[n];
-        Vector3[] pointsBunyi  = new Vector3[n];
+        Vector3[] ptsCahaya = new Vector3[n];
+        Vector3[] ptsBunyi = new Vector3[n];
 
         for (int i = 0; i < n; i++)
         {
             float t = (float)i / (maxDataPoints - 1);
+            float tC = Mathf.Clamp01(arrCahaya[i] / maxIntensitasCahaya);
+            float tB = Mathf.Clamp01(arrBunyi[i] / maxIntensitasBunyi);
 
-            float xPos = grafikOrigin.x + t * grafikWidth;
-            float yCahaya = grafikOrigin.y + (arrCahaya[i] / maxIntensitasCahaya) * grafikHeight;
-            float yBunyi  = grafikOrigin.y + (arrBunyi[i]  / maxIntensitasBunyi)  * grafikHeight;
+            ptsCahaya[i] = worldOrigin
+                         + worldRight * (t * grafikWidth)
+                         + worldUp * (tC * grafikHeight);
 
-            // Clamp agar tidak keluar area
-            yCahaya = Mathf.Clamp(yCahaya, grafikOrigin.y, grafikOrigin.y + grafikHeight);
-            yBunyi  = Mathf.Clamp(yBunyi,  grafikOrigin.y, grafikOrigin.y + grafikHeight);
-
-            pointsCahaya[i] = transform.TransformPoint(new Vector3(xPos, yCahaya, 0f));
-            pointsBunyi[i]  = transform.TransformPoint(new Vector3(xPos, yBunyi,  0f));
+            ptsBunyi[i] = worldOrigin
+                         + worldRight * (t * grafikWidth)
+                         + worldUp * (tB * grafikHeight);
         }
 
         if (lineGrafikCahaya != null)
         {
             lineGrafikCahaya.positionCount = n;
-            lineGrafikCahaya.SetPositions(pointsCahaya);
+            lineGrafikCahaya.SetPositions(ptsCahaya);
         }
-
         if (lineGrafikBunyi != null)
         {
             lineGrafikBunyi.positionCount = n;
-            lineGrafikBunyi.SetPositions(pointsBunyi);
+            lineGrafikBunyi.SetPositions(ptsBunyi);
         }
     }
 
+    // ─── Draw Axis ────────────────────────────────────────────────────────────
     private void DrawAxis()
     {
-        // Axis X: horizontal bawah
         if (lineAxisX != null)
         {
             lineAxisX.positionCount = 2;
-            lineAxisX.SetPosition(0, transform.TransformPoint(new Vector3(grafikOrigin.x, grafikOrigin.y, 0f)));
-            lineAxisX.SetPosition(1, transform.TransformPoint(new Vector3(grafikOrigin.x + grafikWidth, grafikOrigin.y, 0f)));
+            lineAxisX.SetPosition(0, worldOrigin);
+            lineAxisX.SetPosition(1, worldOrigin + worldRight * grafikWidth);
         }
 
-        // Axis Y: vertikal kiri
         if (lineAxisY != null)
         {
             lineAxisY.positionCount = 2;
-            lineAxisY.SetPosition(0, transform.TransformPoint(new Vector3(grafikOrigin.x, grafikOrigin.y, 0f)));
-            lineAxisY.SetPosition(1, transform.TransformPoint(new Vector3(grafikOrigin.x, grafikOrigin.y + grafikHeight, 0f)));
+            lineAxisY.SetPosition(0, worldOrigin);
+            lineAxisY.SetPosition(1, worldOrigin + worldUp * grafikHeight);
         }
     }
 
     // ─── Setup Helpers ────────────────────────────────────────────────────────
     private void SetupLineRenderers()
     {
-        float lineWidth = 0.005f;
-
-        SetupLine(lineGrafikCahaya, warnaCahaya, lineWidth);
-        SetupLine(lineGrafikBunyi,  warnaBunyi,  lineWidth);
-        SetupLine(lineAxisX,        warnaAxis,   lineWidth * 0.5f);
-        SetupLine(lineAxisY,        warnaAxis,   lineWidth * 0.5f);
+        SetupLine(lineGrafikCahaya, warnaCahaya, 0.004f);
+        SetupLine(lineGrafikBunyi, warnaBunyi, 0.004f);
+        SetupLine(lineAxisX, warnaAxis, 0.002f);
+        SetupLine(lineAxisY, warnaAxis, 0.002f);
     }
 
     private void SetupLine(LineRenderer lr, Color color, float width)
     {
         if (lr == null) return;
-        lr.startColor      = color;
-        lr.endColor        = color;
-        lr.startWidth      = width;
-        lr.endWidth        = width;
-        lr.useWorldSpace   = true;
-        lr.material        = new Material(Shader.Find("Sprites/Default"));
+        lr.startColor = color;
+        lr.endColor = color;
+        lr.startWidth = width;
+        lr.endWidth = width;
+        lr.useWorldSpace = true;
+        lr.positionCount = 0;
+
+        if (lr.material == null || lr.material.name.Contains("Default-Line"))
+            lr.material = new Material(Shader.Find("Sprites/Default"));
+
+        lr.material.color = color;
     }
 
     private void SetupLabels()
     {
-        if (labelJudulGrafik    != null) labelJudulGrafik.text    = "GRAFIK INTENSITAS vs WAKTU\nEKSPERIMEN KARAKTERISTIK GELOMBANG";
-        if (labelAxisX          != null) labelAxisX.text          = "Waktu (s)";
-        if (labelAxisY          != null) labelAxisY.text          = "Intensitas";
-        if (labelGarisKuning    != null) labelGarisKuning.text    = "—— Cahaya (lux)";
-        if (labelGarisMerah     != null) labelGarisMerah.text     = "—— Bunyi (dB)";
+        if (labelJudulGrafik != null) labelJudulGrafik.text = "GRAFIK INTENSITAS vs WAKTU";
+        if (labelAxisX != null) labelAxisX.text = "Waktu (s)";
+        if (labelAxisY != null) labelAxisY.text = "Intensitas";
+        if (labelGarisKuning != null) labelGarisKuning.text = "— Cahaya (lux)";
+        if (labelGarisMerah != null) labelGarisMerah.text = "— Bunyi (dB)";
     }
 
     private void UpdateLiveLabels()
     {
         var mgr = KarakteristikExperimentManager.Instance;
         if (mgr == null) return;
-
         if (labelNilaiCahayaLive != null)
             labelNilaiCahayaLive.text = $"Cahaya: {mgr.LightIntensity:F1} lux";
-
         if (labelNilaiBunyiLive != null)
-            labelNilaiBunyiLive.text  = $"Bunyi: {mgr.SoundIntensity:F1} dB";
+            labelNilaiBunyiLive.text = $"Bunyi: {mgr.SoundIntensity:F1} dB";
     }
 
     // ─── Toggle Panel ─────────────────────────────────────────────────────────
@@ -277,11 +255,60 @@ public class KarakteristikGrafikController : MonoBehaviour
                 ? "SEMBUNYIKAN\nGRAFIK"
                 : "TAMPILKAN\nGRAFIK\nEKSPERIMEN";
 
-        // Reset grafik saat dibuka ulang
-        if (isPanelVisible) DrawAxis();
+        if (isPanelVisible)
+        {
+            UpdateGrafikOrigin();
+            DrawAxis();
+        }
 
         Debug.Log($"[Karakteristik] Grafik Panel: {(isPanelVisible ? "TAMPIL" : "TERSEMBUNYI")}");
     }
 
-    public bool IsPanelVisible => isPanelVisible;
+    // ─── Reset Grafik ─────────────────────────────────────────────────────────
+    /// <summary>
+    /// Dipanggil oleh KarakteristikResetController.
+    /// Menghapus semua data history grafik dan menyembunyikan panel.
+    /// </summary>
+    public void ResetGrafik()
+    {
+        // Hapus semua data history
+        dataCahaya.Clear();
+        dataBunyi.Clear();
+
+        // Seed ulang dengan nol
+        for (int i = 0; i < 10; i++)
+        {
+            dataCahaya.Enqueue(0f);
+            dataBunyi.Enqueue(0f);
+        }
+
+        // Kosongkan LineRenderer
+        if (lineGrafikCahaya != null) lineGrafikCahaya.positionCount = 0;
+        if (lineGrafikBunyi != null) lineGrafikBunyi.positionCount = 0;
+
+        // Sembunyikan panel
+        isPanelVisible = false;
+        if (grafikPanelRoot != null)
+            grafikPanelRoot.SetActive(false);
+
+        if (showGrafikButtonLabel != null)
+            showGrafikButtonLabel.text = "TAMPILKAN\nGRAFIK\nEKSPERIMEN";
+
+        // Reset timer sampling
+        sampleTimer = 0f;
+
+        Debug.Log("[Karakteristik] Grafik direset.");
+    }
+
+    // ─── Gizmo debug ─────────────────────────────────────────────────────────
+    private void OnDrawGizmos()
+    {
+        if (!showDebugGizmo || !isPanelVisible) return;
+        Gizmos.color = Color.green;
+        Gizmos.DrawSphere(worldOrigin, 0.02f);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(worldOrigin, worldOrigin + worldRight * grafikWidth);
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawLine(worldOrigin, worldOrigin + worldUp * grafikHeight);
+    }
 }

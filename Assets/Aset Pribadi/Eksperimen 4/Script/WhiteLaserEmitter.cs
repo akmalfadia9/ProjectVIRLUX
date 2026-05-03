@@ -47,7 +47,7 @@ public class WhiteLaserEmitter : MonoBehaviour
 
         [Header("=== RAY SETTINGS ===")]
         [Tooltip("Panjang maksimum raycast laser (meter)")]
-        public float maxRayDistance = 15f;
+        public float maxRayDistance = 5f;
 
         [Tooltip("Layer mask. Set ke layer 'Prism' saja agar tidak interference objek lain.")]
         public LayerMask prismLayerMask = ~0;
@@ -68,12 +68,12 @@ public class WhiteLaserEmitter : MonoBehaviour
         
         private bool isLaserOn = false;
         private XRGrabInteractable grabInteractable;
-        //private PrismDispersionController _lastHitPrism = null;
+        private PrismDispersionController _lastHitPrism = null;
 
-        // =====================================================================
-        // UNITY LIFECYCLE
-        // =====================================================================
-        void Awake()
+    // =====================================================================
+    // UNITY LIFECYCLE
+    // =====================================================================
+    void Awake()
         {
             grabInteractable = GetComponent<XRGrabInteractable>();
         }
@@ -150,44 +150,45 @@ public class WhiteLaserEmitter : MonoBehaviour
                 if (prism != null)
                 {
 
-                    prism.OnRayHit2(
+                    prism.OnRayHit(
                         hitPoint: hit.point,
                         incomingDirection: direction,
                         hitNormal: hit.normal
                     );
 
                     UpdateLaserVisual(origin, hit.point);
+
                 }
                 else
                 {
                     // Kena objek bukan prisma
                     UpdateLaserVisual(origin, hit.point);
-                    //DeactivateLastPrism();
-                }
+                    DeactivateLastPrism();
+            }
             }
             else
             {
                 // Tidak kena apapun
                 UpdateLaserVisual(origin, origin + direction * maxRayDistance);
-                //DeactivateLastPrism();
-            }
+                DeactivateLastPrism();
+        }
         }
 
         private void DeactivateLaser()
         {
             if (laserLineRenderer != null)
                 laserLineRenderer.enabled = false;
-            //DeactivateLastPrism();
-        }
+            DeactivateLastPrism();
+    }
 
-        //private void DeactivateLastPrism()
-        //{
-        //    // PrismDispersionController.Update() menangani hide otomatis
-        //    // jika _isActive tidak di-set true dalam frame ini
-        //    _lastHitPrism = null;
-        //}
+        private void DeactivateLastPrism()
+    {
+        // PrismDispersionController.Update() menangani hide otomatis
+        // jika _isActive tidak di-set true dalam frame ini
+        _lastHitPrism = null;
+    }
 
-        private void UpdateLaserVisual(Vector3 start, Vector3 end)
+    private void UpdateLaserVisual(Vector3 start, Vector3 end)
         {
             if (laserLineRenderer == null) return;
             laserLineRenderer.enabled = true;
@@ -195,21 +196,24 @@ public class WhiteLaserEmitter : MonoBehaviour
             laserLineRenderer.SetPosition(1, end);
         }
 
-        private void SetupLineRenderer()
-        {
-            if (laserLineRenderer == null) return;
-            laserLineRenderer.positionCount = 2;
-            laserLineRenderer.startWidth = laserWidth;
-            laserLineRenderer.endWidth = laserWidth;
-            laserLineRenderer.startColor = Color.white;
-            laserLineRenderer.endColor = Color.white;
-            laserLineRenderer.enabled = false;
-        }
+    private void SetupLineRenderer()
+    {
+        if (laserLineRenderer == null) return;
+        laserLineRenderer.positionCount = 2;
+        laserLineRenderer.startWidth = laserWidth;
+        laserLineRenderer.endWidth = laserWidth;
 
-        //private void OnDrawGizmos()
-        //{
-        //    if (!showDebugRay || laserOrigin == null) return;
-        //    Gizmos.color = Color.white;
-        //    Gizmos.DrawRay(laserOrigin.position, laserOrigin.forward * maxRayDistance);
-        //}
+        laserLineRenderer.useWorldSpace = true;
+
+        laserLineRenderer.startColor = Color.white;
+        laserLineRenderer.endColor = Color.white;
+        laserLineRenderer.enabled = false;
     }
+
+    private void OnDrawGizmos()
+    {
+        if (!showDebugRay || laserOrigin == null) return;
+        Gizmos.color = Color.white;
+        Gizmos.DrawRay(laserOrigin.position, laserOrigin.forward * maxRayDistance);
+    }
+}

@@ -19,10 +19,10 @@ public class KarakteristikLampuPijarController : MonoBehaviour
 
     [Header("=== Parameter Karakteristik Cahaya ===")]
     [Tooltip("Intensitas light saat menyala penuh")]
-    public float maxLightIntensity = 3f;
+    public float maxLightIntensity = 0.5f;
 
     [Tooltip("Range point light")]
-    public float lightRange = 1.5f;
+    public float lightRange = 0.5f;
 
     [Tooltip("Warna cahaya lampu pijar (warm white)")]
     public Color lampColor = new Color(1f, 0.9f, 0.7f);

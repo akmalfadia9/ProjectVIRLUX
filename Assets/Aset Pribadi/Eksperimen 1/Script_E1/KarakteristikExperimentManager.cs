@@ -79,6 +79,14 @@ public class KarakteristikExperimentManager : MonoBehaviour
         if (isVacuumOn)
         {
             vacuumLevel = Mathf.MoveTowards(vacuumLevel, 1f, vacuumPumpSpeed * Time.deltaTime);
+
+            // Matikan vacuum pump otomatis saat level mencapai 100%
+            if (vacuumLevel >= 1f)
+            {
+                isVacuumOn = false;
+                OnVacuumToggled?.Invoke(false);
+                Debug.Log("[Karakteristik] Vacuum otomatis mati - level 100%");
+            }
         }
         else
         {

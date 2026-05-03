@@ -74,6 +74,9 @@ public class KarakteristikDataPanelController : MonoBehaviour
         // Setup judul panel
         if (txtJudulPanel != null)
             txtJudulPanel.text = "DATA EKSPERIMEN\nKARAKTERISTIK GELOMBANG";
+        if (txtStatusLampu != null) txtStatusLampu.text = "";
+        if (txtStatusAlarm != null) txtStatusAlarm.text = "";
+        if (txtStatusVacuum != null) txtStatusVacuum.text = "";
 
         // XR Button event
         if (revealButton != null)
@@ -207,7 +210,7 @@ public class KarakteristikDataPanelController : MonoBehaviour
         }
         else if (lamp && alarm && vacuum)
         {
-            txtKeteranganFisika.text = "Perbedaan terlihat!\nCahaya: tetap (gel. EM)\nBunyi: menurun (gel. mekanik)";
+            txtKeteranganFisika.text = "Perbedaan terlihat!\nCahaya: tetap\nBunyi: menurun";
         }
         else
         {

@@ -3,8 +3,108 @@
   "WorkspaceRootPath": "C:\\Users\\acer nitro\\Project VIR-LUX\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 3\\script eksperimen 3\\refractiveindexslider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 3\\script eksperimen 3\\refractiveindexslider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 3\\script eksperimen 3\\refractionlasergun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 3\\script eksperimen 3\\refractionlasergun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\persistxrrig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\persistxrrig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\teleportmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\teleportmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\teleportationactivation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\teleportationactivation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.inputsystem@21a28c3a6c83\\InputSystem\\Utilities\\DelegateHelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.inputsystem@21a28c3a6c83\\InputSystem\\Utilities\\DelegateHelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\inputtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\inputtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 1\\script_e1\\karakteristikgrafikcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 1\\script_e1\\karakteristikgrafikcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 1\\script_e1\\karakteristikexperimentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 1\\script_e1\\karakteristikexperimentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 1\\script_e1\\karakteristiklampupijarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 1\\script_e1\\karakteristiklampupijarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 1\\script_e1\\karakteristikdatapanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 1\\script_e1\\karakteristikdatapanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 1\\script_e1\\karakteristikalarmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 1\\script_e1\\karakteristikalarmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Locomotion\\Teleportation\\TeleportationAnchor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Locomotion\\Teleportation\\TeleportationAnchor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Runtime\\OpenXRProjectValidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Runtime\\OpenXRProjectValidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Interaction\\XRInteractionManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Interaction\\XRInteractionManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Runtime\\OpenXRLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Runtime\\OpenXRLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.management@e3a3882b360a\\Runtime\\XRLoaderHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.xr.management@e3a3882b360a\\Runtime\\XRLoaderHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\animatehandoninput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\animatehandoninput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.meta.xr.sdk.core@9a2eddde53b7\\Editor\\OVRProjectSetup\\Tasks\\Processors\\OVRConfigurationTaskUpdaterSummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.meta.xr.sdk.core@9a2eddde53b7\\Editor\\OVRProjectSetup\\Tasks\\Processors\\OVRConfigurationTaskUpdaterSummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.meta.xr.sdk.core@9a2eddde53b7\\Editor\\MetaXRSimulator\\Installer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.meta.xr.sdk.core@9a2eddde53b7\\Editor\\MetaXRSimulator\\Installer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 1\\script_e1\\karakteristikvacuumpumpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 1\\script_e1\\karakteristikvacuumpumpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 5\\script\\difraksimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 5\\script\\difraksimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 6\\script\\dse_beamafterslit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 6\\script\\dse_beamafterslit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 6\\script\\dse_screenrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 6\\script\\dse_screenrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 4\\script\\prismdispersioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 4\\script\\prismdispersioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 4\\script\\whitelaseremitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 4\\script\\whitelaseremitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 6\\script\\dse_lasercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,10 +119,6 @@
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 6\\script\\dse_uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 6\\script\\dse_screenrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 6\\script\\dse_screenrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 6\\script\\dse_lasercolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 6\\script\\dse_lasercolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,20 +131,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Aset Pribadi\\Eksperimen 6\\NewMonoBehaviourScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 4\\script\\whitelaseremitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 4\\script\\whitelaseremitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 3\\script eksperimen 3\\refractionlasergun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 3\\script eksperimen 3\\refractionlasergun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 2\\script_e2\\reflectionlasergun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 2\\script_e2\\reflectionlasergun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 4\\script\\prismdispersioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 4\\script\\prismdispersioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 4\\script\\dispersionphysics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,14 +141,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 3\\script eksperimen 3\\refractiveblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 3\\script eksperimen 3\\refractiveblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Runtime\\OpenXRLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Runtime\\OpenXRLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 5\\script\\difraksimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 5\\script\\difraksimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 5\\script\\difraksilabelbillboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,10 +175,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Interaction\\Interactors\\XRRayInteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Interaction\\XRInteractionManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Interaction\\XRInteractionManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 2\\script_e2\\reflectionvisualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\eksperimen 2\\script_e2\\reflectionvisualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -125,10 +197,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\ReflectionNormalVisualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\ReflectionNormalVisualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\teleportationactivation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\teleportationactivation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\eksperimen 3\\script eksperimen 3\\angleindicator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -159,10 +227,6 @@
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\script\\lasergun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\teleportmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\teleportmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\aset pribadi\\script\\alarmfacebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\aset pribadi\\script\\alarmfacebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -181,10 +245,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\righthandonlyuifilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\righthandonlyuifilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\inputtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\inputtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\onboardingvr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -213,10 +273,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\3d laboratory environment with appratus\\documentation\\3d laboratory environment with appratus.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\3d laboratory environment with appratus\\documentation\\3d laboratory environment with appratus.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\acer nitro\\project vir-lux\\assets\\animatehandoninput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\animatehandoninput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.ugui@3dd2fbd8c1f1\\Runtime\\TMP\\TMP_PackageResourceImporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -253,6 +309,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Dispersionprism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Aset Pribadi\\Eksperimen 4\\Dispersionprism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\RemoveMissingScripts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\RemoveMissingScripts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -267,19 +327,198 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DSE_BeamAfterSlit.cs",
-              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_BeamAfterSlit.cs",
-              "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_BeamAfterSlit.cs",
-              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_BeamAfterSlit.cs",
-              "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_BeamAfterSlit.cs",
-              "ViewState": "AgIAADgBAAAAAAAAAAAmwE0BAAABAAAAAAAAAA==",
+              "Title": "RefractiveIndexSlider.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 3\\Script Eksperimen 3\\RefractiveIndexSlider.cs",
+              "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 3\\Script Eksperimen 3\\RefractiveIndexSlider.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 3\\Script Eksperimen 3\\RefractiveIndexSlider.cs",
+              "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 3\\Script Eksperimen 3\\RefractiveIndexSlider.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAMwIoAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T13:12:00.058Z",
+              "WhenOpened": "2026-05-02T08:59:37.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "PersistXRRig.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\PersistXRRig.cs",
+              "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\PersistXRRig.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\PersistXRRig.cs",
+              "RelativeToolTip": "Assets\\Aset Pribadi\\PersistXRRig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T08:12:37.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DelegateHelpers.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.inputsystem@21a28c3a6c83\\InputSystem\\Utilities\\DelegateHelpers.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.inputsystem@21a28c3a6c83\\InputSystem\\Utilities\\DelegateHelpers.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.inputsystem@21a28c3a6c83\\InputSystem\\Utilities\\DelegateHelpers.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.inputsystem@21a28c3a6c83\\InputSystem\\Utilities\\DelegateHelpers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T07:57:31.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "KarakteristikExperimentManager.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikExperimentManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikExperimentManager.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikExperimentManager.cs",
+              "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikExperimentManager.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAIwGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T08:53:23.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "KarakteristikLampuPijarController.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikLampuPijarController.cs",
+              "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikLampuPijarController.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikLampuPijarController.cs",
+              "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikLampuPijarController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAQwE4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T08:36:46.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "KarakteristikGrafikController.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikGrafikController.cs",
+              "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikGrafikController.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikGrafikController.cs",
+              "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikGrafikController.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAADwv+EAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T08:25:10.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "KarakteristikDataPanelController.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikDataPanelController.cs",
+              "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikDataPanelController.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikDataPanelController.cs",
+              "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikDataPanelController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAQwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T08:22:56.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "KarakteristikAlarmController.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikAlarmController.cs",
+              "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikAlarmController.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikAlarmController.cs",
+              "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikAlarmController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAMwGEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T08:02:04.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TeleportationAnchor.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Locomotion\\Teleportation\\TeleportationAnchor.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Locomotion\\Teleportation\\TeleportationAnchor.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Locomotion\\Teleportation\\TeleportationAnchor.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Locomotion\\Teleportation\\TeleportationAnchor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T07:38:26.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "XRLoaderHelper.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.management@e3a3882b360a\\Runtime\\XRLoaderHelper.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.management@e3a3882b360a\\Runtime\\XRLoaderHelper.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.management@e3a3882b360a\\Runtime\\XRLoaderHelper.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.xr.management@e3a3882b360a\\Runtime\\XRLoaderHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T02:08:33.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "RemoveMissingScripts.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\RemoveMissingScripts.cs",
+              "RelativeDocumentMoniker": "Assets\\RemoveMissingScripts.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\RemoveMissingScripts.cs",
+              "RelativeToolTip": "Assets\\RemoveMissingScripts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T02:03:53.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OpenXRProjectValidation.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Runtime\\OpenXRProjectValidation.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Runtime\\OpenXRProjectValidation.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Runtime\\OpenXRProjectValidation.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Runtime\\OpenXRProjectValidation.cs",
+              "ViewState": "AgIAAGcBAAAAAAAAAAAMwHcBAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T01:53:55.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OVRConfigurationTaskUpdaterSummary.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.meta.xr.sdk.core@9a2eddde53b7\\Editor\\OVRProjectSetup\\Tasks\\Processors\\OVRConfigurationTaskUpdaterSummary.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core@9a2eddde53b7\\Editor\\OVRProjectSetup\\Tasks\\Processors\\OVRConfigurationTaskUpdaterSummary.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.meta.xr.sdk.core@9a2eddde53b7\\Editor\\OVRProjectSetup\\Tasks\\Processors\\OVRConfigurationTaskUpdaterSummary.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.core@9a2eddde53b7\\Editor\\OVRProjectSetup\\Tasks\\Processors\\OVRConfigurationTaskUpdaterSummary.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T16:45:48.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Installer.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.meta.xr.sdk.core@9a2eddde53b7\\Editor\\MetaXRSimulator\\Installer.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.meta.xr.sdk.core@9a2eddde53b7\\Editor\\MetaXRSimulator\\Installer.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.meta.xr.sdk.core@9a2eddde53b7\\Editor\\MetaXRSimulator\\Installer.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.meta.xr.sdk.core@9a2eddde53b7\\Editor\\MetaXRSimulator\\Installer.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAMwIYAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T16:41:28.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "KarakteristikVacuumPumpController.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikVacuumPumpController.cs",
+              "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikVacuumPumpController.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikVacuumPumpController.cs",
+              "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\KarakteristikVacuumPumpController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T21:16:54.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DSE_BeamAfterSlit.cs",
+              "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_BeamAfterSlit.cs",
+              "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_BeamAfterSlit.cs",
+              "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_BeamAfterSlit.cs",
+              "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_BeamAfterSlit.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAiwOcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T13:12:00.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "DSE_SceneLock.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_SceneLock.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_SceneLock.cs",
@@ -291,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 28,
               "Title": "DSE_UIManager.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_UIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_UIManager.cs",
@@ -303,19 +542,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 23,
               "Title": "DSE_ScreenRenderer.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_ScreenRenderer.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_ScreenRenderer.cs",
               "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_ScreenRenderer.cs",
               "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_ScreenRenderer.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAIwLkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAIwNEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-27T13:07:09.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 26,
               "Title": "DSE_LaserController.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_LaserController.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_LaserController.cs",
@@ -323,12 +562,11 @@
               "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_LaserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwIwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T13:06:28.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-27T13:06:28.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 29,
               "Title": "DSE_LaserColor.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_LaserColor.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 6\\Script\\DSE_LaserColor.cs",
@@ -340,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 30,
               "Title": "DSE_InterferenceCalculator.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 6\\DSE_InterferenceCalculator.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 6\\DSE_InterferenceCalculator.cs",
@@ -351,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 31,
               "Title": "NewMonoBehaviourScript.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 6\\NewMonoBehaviourScript.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 6\\NewMonoBehaviourScript.cs",
@@ -362,7 +600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 34,
               "Title": "RefractiveBlock.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 3\\Script Eksperimen 3\\RefractiveBlock.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 3\\Script Eksperimen 3\\RefractiveBlock.cs",
@@ -374,7 +612,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 33,
               "Title": "DispersionPhysics.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Script\\DispersionPhysics.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 4\\Script\\DispersionPhysics.cs",
@@ -386,55 +624,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
               "Title": "PrismDispersionController.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Script\\PrismDispersionController.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 4\\Script\\PrismDispersionController.cs",
               "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Script\\PrismDispersionController.cs",
               "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 4\\Script\\PrismDispersionController.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAQwHQAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAUwMcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-27T07:41:03.162Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 25,
               "Title": "WhiteLaserEmitter.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Script\\WhiteLaserEmitter.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 4\\Script\\WhiteLaserEmitter.cs",
               "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Script\\WhiteLaserEmitter.cs",
               "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 4\\Script\\WhiteLaserEmitter.cs",
-              "ViewState": "AgIAAPkAAAAAAAAAAAAgwAcBAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAmwJgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-27T05:48:19.795Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "OpenXRLoader.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Runtime\\OpenXRLoader.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Runtime\\OpenXRLoader.cs",
               "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Runtime\\OpenXRLoader.cs",
               "RelativeToolTip": "Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Runtime\\OpenXRLoader.cs",
-              "ViewState": "AgIAAB8CAAAAAAAAAAAlwC4CAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAB8CAAAAAAAAAAAlwC0CAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-27T03:33:15.885Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "Difraksimanager.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 5\\Script\\Difraksimanager.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 5\\Script\\Difraksimanager.cs",
               "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 5\\Script\\Difraksimanager.cs",
               "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 5\\Script\\Difraksimanager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAANMAAAAAAAAAAAAcwEYBAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-27T03:13:07.446Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 35,
               "Title": "Difraksilabelbillboard.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 5\\Script\\Difraksilabelbillboard.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 5\\Script\\Difraksilabelbillboard.cs",
@@ -446,7 +684,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 36,
               "Title": "DifractionManager.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 5\\Script\\DifractionManager.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 5\\Script\\DifractionManager.cs",
@@ -457,7 +695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 37,
               "Title": "PrismMaterialPresetCreator.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Editor\\PrismMaterialPresetCreator.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 4\\Editor\\PrismMaterialPresetCreator.cs",
@@ -469,7 +707,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 39,
               "Title": "Lasergunanchor.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Lasergunanchor.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 4\\Lasergunanchor.cs",
@@ -480,7 +718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 38,
               "Title": "Dispersionlaser.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Dispersionlaser.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 4\\Dispersionlaser.cs",
@@ -491,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 76,
               "Title": "Dispersionprism.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 4\\Dispersionprism.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 4\\Dispersionprism.cs",
@@ -503,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 40,
               "Title": "ReflectionSceneBuilder.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 2\\Script_E2\\Experiment terakhir\\ReflectionSceneBuilder.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 2\\Script_E2\\Experiment terakhir\\ReflectionSceneBuilder.cs",
@@ -514,7 +752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 41,
               "Title": "XRUIInputModule.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\UI\\XRUIInputModule.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\UI\\XRUIInputModule.cs",
@@ -526,7 +764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 42,
               "Title": "XRRayInteractor.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Interaction\\Interactors\\XRRayInteractor.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Interaction\\Interactors\\XRRayInteractor.cs",
@@ -538,19 +776,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 14,
               "Title": "XRInteractionManager.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Interaction\\XRInteractionManager.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Interaction\\XRInteractionManager.cs",
               "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Interaction\\XRInteractionManager.cs",
               "RelativeToolTip": "Library\\PackageCache\\com.unity.xr.interaction.toolkit@4612b35e2aac\\Runtime\\Interaction\\XRInteractionManager.cs",
-              "ViewState": "AgIAAIcMAAAAAAAAAAAQwKIMAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAPEEAAAAAAAAAAAMwAIFAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-26T05:57:23.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 43,
               "Title": "ReflectionVisualizer.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 2\\Script_E2\\ReflectionVisualizer.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 2\\Script_E2\\ReflectionVisualizer.cs",
@@ -562,7 +800,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 44,
               "Title": "DemoToggleController.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 2\\Script_E2\\DemoToggleController.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 2\\Script_E2\\DemoToggleController.cs",
@@ -574,7 +812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 45,
               "Title": "DoubleMirrorLaserController.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 2\\Script_E2\\DoubleMirrorLaserController.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 2\\Script_E2\\DoubleMirrorLaserController.cs",
@@ -586,7 +824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 47,
               "Title": "ReflectionAngleLabelManager.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 2\\Script_E2\\ReflectionAngleLabelManager.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 2\\Script_E2\\ReflectionAngleLabelManager.cs",
@@ -598,7 +836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 46,
               "Title": "ReflectionMirrorSurface.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 2\\Script_E2\\ReflectionMirrorSurface.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 2\\Script_E2\\ReflectionMirrorSurface.cs",
@@ -610,7 +848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 32,
               "Title": "ReflectionLaserGun.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 2\\Script_E2\\ReflectionLaserGun.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 2\\Script_E2\\ReflectionLaserGun.cs",
@@ -622,7 +860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 48,
               "Title": "ReflectionNormalVisualizer.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\ReflectionNormalVisualizer.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\ReflectionNormalVisualizer.cs",
@@ -633,7 +871,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 74,
               "Title": "ReflectionLaserRenderer.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\ReflectionLaserRenderer.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\ReflectionLaserRenderer.cs",
@@ -645,7 +883,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 75,
               "Title": "ReflectionLaserGun.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\ReflectionLaserGun.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\ReflectionLaserGun.cs",
@@ -657,7 +895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 73,
               "Title": "RefractionNormalVisualizer.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\RefractionNormalVisualizer.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\RefractionNormalVisualizer.cs",
@@ -669,7 +907,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 72,
               "Title": "RefractionLaserRenderer.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\RefractionLaserRenderer.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\RefractionLaserRenderer.cs",
@@ -681,7 +919,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 71,
               "Title": "RefractionLaserGun.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\RefractionLaserGun.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 1\\Script_E1\\RefractionLaserGun.cs",
@@ -693,7 +931,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 49,
               "Title": "AngleIndicator.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 3\\Script Eksperimen 3\\AngleIndicator.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 3\\Script Eksperimen 3\\AngleIndicator.cs",
@@ -705,19 +943,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "RefractionLaserGun.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 3\\Script Eksperimen 3\\RefractionLaserGun.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Eksperimen 3\\Script Eksperimen 3\\RefractionLaserGun.cs",
               "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Eksperimen 3\\Script Eksperimen 3\\RefractionLaserGun.cs",
               "RelativeToolTip": "Assets\\Aset Pribadi\\Eksperimen 3\\Script Eksperimen 3\\RefractionLaserGun.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAA9wEgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-25T09:18:11.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 70,
               "Title": "RefractionLaserGun.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Materials\\Eksperimen 3\\Script Eksperimen 3\\RefractionLaserGun.cs",
               "RelativeDocumentMoniker": "Assets\\Materials\\Eksperimen 3\\Script Eksperimen 3\\RefractionLaserGun.cs",
@@ -729,7 +967,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 50,
               "Title": "LaserGunRefraction.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Materials\\Eksperimen 3\\Script Eksperimen 3\\LaserGunRefraction.cs",
               "RelativeDocumentMoniker": "Assets\\Materials\\Eksperimen 3\\Script Eksperimen 3\\LaserGunRefraction.cs",
@@ -740,7 +978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 51,
               "Title": "LaserGun.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Materials\\Eksperimen 3\\Script Eksperimen 3\\LaserGun.cs",
               "RelativeDocumentMoniker": "Assets\\Materials\\Eksperimen 3\\Script Eksperimen 3\\LaserGun.cs",
@@ -751,7 +989,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 53,
               "Title": "LidChamberNoParent.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Script\\LidChamberNoParent.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Script\\LidChamberNoParent.cs",
@@ -763,7 +1001,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 54,
               "Title": "PumpButton.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Script\\PumpButton.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Script\\PumpButton.cs",
@@ -775,7 +1013,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 52,
               "Title": "VacuumChamberManager.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Script\\VacuumChamberManager.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Script\\VacuumChamberManager.cs",
@@ -787,7 +1025,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 56,
               "Title": "AlarmFaceButton.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Script\\AlarmFaceButton.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Script\\AlarmFaceButton.cs",
@@ -799,7 +1037,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 57,
               "Title": "AlarmClock.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Script\\AlarmClock.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Script\\AlarmClock.cs",
@@ -811,7 +1049,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 55,
               "Title": "LaserGun.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Aset Pribadi\\Script\\LaserGun.cs",
               "RelativeDocumentMoniker": "Assets\\Aset Pribadi\\Script\\LaserGun.cs",
@@ -823,7 +1061,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 59,
               "Title": "ScriptWallTeleporter.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\ScriptWallTeleporter.cs",
               "RelativeDocumentMoniker": "Assets\\ScriptWallTeleporter.cs",
@@ -835,7 +1073,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 60,
               "Title": "RightHandOnlyUIFilter.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\RightHandOnlyUIFilter.cs",
               "RelativeDocumentMoniker": "Assets\\RightHandOnlyUIFilter.cs",
@@ -847,19 +1085,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 3,
               "Title": "TeleportMenuManager.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\TeleportMenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\TeleportMenuManager.cs",
               "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\TeleportMenuManager.cs",
               "RelativeToolTip": "Assets\\TeleportMenuManager.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAswGsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-18T08:29:09.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 62,
               "Title": "AdditionalLightsShadowCasterPass.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.render-pipelines.universal@0c5162adfb45\\Runtime\\Passes\\AdditionalLightsShadowCasterPass.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@0c5162adfb45\\Runtime\\Passes\\AdditionalLightsShadowCasterPass.cs",
@@ -871,7 +1109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 63,
               "Title": "ForwardLights.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.render-pipelines.universal@0c5162adfb45\\Runtime\\ForwardLights.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@0c5162adfb45\\Runtime\\ForwardLights.cs",
@@ -883,7 +1121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 64,
               "Title": "TeleportationScript.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\TeleportationScript.cs",
               "RelativeDocumentMoniker": "Assets\\TeleportationScript.cs",
@@ -895,7 +1133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 58,
               "Title": "Lit.shader",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.render-pipelines.universal@0c5162adfb45\\Shaders\\Lit.shader",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@0c5162adfb45\\Shaders\\Lit.shader",
@@ -907,7 +1145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 61,
               "Title": "OnBoardingVR.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\OnBoardingVR.cs",
               "RelativeDocumentMoniker": "Assets\\OnBoardingVR.cs",
@@ -919,7 +1157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 65,
               "Title": "OpenXREditorSettings.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Editor\\OpenXREditorSettings.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.openxr@ef0033a586bf\\Editor\\OpenXREditorSettings.cs",
@@ -931,7 +1169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 66,
               "Title": "AnimateHandOnInput.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Lets Make a VR Game\\Oculus Hands\\Scripts\\AnimateHandOnInput.cs",
               "RelativeDocumentMoniker": "Assets\\Lets Make a VR Game\\Oculus Hands\\Scripts\\AnimateHandOnInput.cs",
@@ -942,7 +1180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 69,
               "Title": "ReadMe.txt",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\Lets Make a VR Game\\ReadMe.txt",
               "RelativeDocumentMoniker": "Assets\\Lets Make a VR Game\\ReadMe.txt",
@@ -954,7 +1192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 67,
               "Title": "3D Laboratory environment with appratus.txt",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\3D Laboratory Environment with Appratus\\Documentation\\3D Laboratory environment with appratus.txt",
               "RelativeDocumentMoniker": "Assets\\3D Laboratory Environment with Appratus\\Documentation\\3D Laboratory environment with appratus.txt",
@@ -966,43 +1204,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 4,
               "Title": "TeleportationActivation.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\TeleportationActivation.cs",
               "RelativeDocumentMoniker": "Assets\\TeleportationActivation.cs",
               "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\TeleportationActivation.cs",
               "RelativeToolTip": "Assets\\TeleportationActivation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwCcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-11T17:04:24.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 17,
               "Title": "AnimateHandOnInput.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\AnimateHandOnInput.cs",
               "RelativeDocumentMoniker": "Assets\\AnimateHandOnInput.cs",
               "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\AnimateHandOnInput.cs",
               "RelativeToolTip": "Assets\\AnimateHandOnInput.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA0wBkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-11T15:44:44.685Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 6,
               "Title": "InputTest.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\InputTest.cs",
               "RelativeDocumentMoniker": "Assets\\InputTest.cs",
               "ToolTip": "C:\\Users\\acer nitro\\Project VIR-LUX\\Assets\\InputTest.cs",
               "RelativeToolTip": "Assets\\InputTest.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAkAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-11T15:00:19.592Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 68,
               "Title": "TMP_PackageResourceImporter.cs",
               "DocumentMoniker": "C:\\Users\\acer nitro\\Project VIR-LUX\\Library\\PackageCache\\com.unity.ugui@3dd2fbd8c1f1\\Runtime\\TMP\\TMP_PackageResourceImporter.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@3dd2fbd8c1f1\\Runtime\\TMP\\TMP_PackageResourceImporter.cs",

@@ -203,25 +203,29 @@ namespace DoubleSlit
         {
             var positions = new List<float>();
 
-            // m = 0 (terang pusat)
+            // Setengah tinggi layar fisik — sinar tidak boleh melewati ini
+            // Harus sama dengan DSE_ScreenPhysicalHeight / 2
+            float halfScreen = 0.42f; // = 0.837 / 2
+
+            // Tambah batas lebih ketat: hanya 80% dari setengah layar
+            // agar sinar tidak menuju ke tepi/luar layar
+            float maxY = halfScreen * 0.75f;
+
+            // m=0 selalu ada (terang pusat)
             positions.Add(0f);
 
-            // m = ±1, ±2, ±3, ...
-            int maxM = (DSE_RaysPerSlit - 1) / 2 + 1;
-            for (int m = 1; m <= maxM && positions.Count < DSE_RaysPerSlit; m++)
+            for (int m = 1; positions.Count < DSE_RaysPerSlit; m++)
             {
-                float ym = DSE_InterferenceCalculator.BrightFringePosition(m, lambda);
+                float ym = DSE_InterferenceCalculator
+                               .BrightFringePosition(m, lambda);
 
-                // Tambahkan +m dan -m, pastikan tidak melebihi setengah lebar layar fisik
-                float halfScreenHeight = 0.08f; // 8 cm setengah tinggi layar visual
+                // Hentikan jika sudah di luar batas layar
+                if (ym > maxY) break;
 
-                if (ym < halfScreenHeight)
-                {
-                    if (positions.Count < DSE_RaysPerSlit)
-                        positions.Add(+ym);
-                    if (positions.Count < DSE_RaysPerSlit)
-                        positions.Add(-ym);
-                }
+                if (positions.Count < DSE_RaysPerSlit)
+                    positions.Add(+ym);
+                if (positions.Count < DSE_RaysPerSlit)
+                    positions.Add(-ym);
             }
 
             return positions;
